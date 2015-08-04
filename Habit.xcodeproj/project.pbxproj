@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2093B371947590800299096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B361947590800299096 /* Foundation.framework */; };
+		A2093B391947590800299096 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B381947590800299096 /* CoreGraphics.framework */; };
+		A2093B3B1947590800299096 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B3A1947590800299096 /* UIKit.framework */; };
+		A2093B3D1947590800299096 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B3C1947590800299096 /* CoreData.framework */; };
+		A2093B431947590800299096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2093B411947590800299096 /* InfoPlist.strings */; };
+		A2093B451947590800299096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2093B441947590800299096 /* main.m */; };
+		A2093B491947590800299096 /* HabitsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2093B481947590800299096 /* HabitsAppDelegate.m */; };
+		A2093B4C1947590900299096 /* Habits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2093B4A1947590900299096 /* Habits.xcdatamodeld */; };
+		A2093B4E1947590900299096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2093B4D1947590900299096 /* Images.xcassets */; };
+		A2093B561947590900299096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B361947590800299096 /* Foundation.framework */; };
+		A2093B571947590900299096 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B3A1947590800299096 /* UIKit.framework */; };
+		A2093B581947590900299096 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2093B3C1947590800299096 /* CoreData.framework */; };
+		A2093B601947590900299096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2093B5E1947590900299096 /* InfoPlist.strings */; };
+		A2093B621947590900299096 /* HabitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2093B611947590900299096 /* HabitsTests.m */; };
+		A2093B6C1947653800299096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2093B6B1947653800299096 /* Main.storyboard */; };
+		A2093B6F1947694F00299096 /* HabitsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2093B6E1947694F00299096 /* HabitsTableViewController.m */; };
+		A2093B721947698400299096 /* HabitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2093B711947698400299096 /* HabitsViewController.m */; };
+		A250698D1958B125006F0D1C /* HabitsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A250698C1958B125006F0D1C /* HabitsInfoViewController.m */; };
+		A2F02AD91947AE8900498E3A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F02AD81947AE8900498E3A /* CoreLocation.framework */; };
+		A2FA3B251948F8B80069C080 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FA3B241948F8B80069C080 /* MapKit.framework */; };
+		A2FB8F2C194F8EBA002BA5CA /* HabitsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FB8F2B194F8EBA002BA5CA /* HabitsMapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2093B591947590900299096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2093B2B1947590800299096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2093B321947590800299096;
+			remoteInfo = Habits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2093B331947590800299096 /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2093B361947590800299096 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2093B381947590800299096 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2093B3A1947590800299096 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2093B3C1947590800299096 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A2093B401947590800299096 /* Habits-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Habits-Info.plist"; sourceTree = "<group>"; };
+		A2093B421947590800299096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2093B441947590800299096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2093B461947590800299096 /* Habits-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Habits-Prefix.pch"; sourceTree = "<group>"; };
+		A2093B471947590800299096 /* HabitsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabitsAppDelegate.h; sourceTree = "<group>"; };
+		A2093B481947590800299096 /* HabitsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabitsAppDelegate.m; sourceTree = "<group>"; };
+		A2093B4B1947590900299096 /* Habits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Habits.xcdatamodel; sourceTree = "<group>"; };
+		A2093B4D1947590900299096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2093B531947590900299096 /* HabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2093B5D1947590900299096 /* HabitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HabitsTests-Info.plist"; sourceTree = "<group>"; };
+		A2093B5F1947590900299096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2093B611947590900299096 /* HabitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabitsTests.m; sourceTree = "<group>"; };
+		A2093B6B1947653800299096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2093B6D1947694F00299096 /* HabitsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitsTableViewController.h; sourceTree = "<group>"; };
+		A2093B6E1947694F00299096 /* HabitsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitsTableViewController.m; sourceTree = "<group>"; };
+		A2093B701947698400299096 /* HabitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitsViewController.h; sourceTree = "<group>"; };
+		A2093B711947698400299096 /* HabitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitsViewController.m; sourceTree = "<group>"; };
+		A250698B1958B125006F0D1C /* HabitsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitsInfoViewController.h; sourceTree = "<group>"; };
+		A250698C1958B125006F0D1C /* HabitsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitsInfoViewController.m; sourceTree = "<group>"; };
+		A2F02AD81947AE8900498E3A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A2FA3B241948F8B80069C080 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A2FB8F2A194F8EBA002BA5CA /* HabitsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitsMapViewController.h; sourceTree = "<group>"; };
+		A2FB8F2B194F8EBA002BA5CA /* HabitsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitsMapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2093B301947590800299096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FA3B251948F8B80069C080 /* MapKit.framework in Frameworks */,
+				A2F02AD91947AE8900498E3A /* CoreLocation.framework in Frameworks */,
+				A2093B391947590800299096 /* CoreGraphics.framework in Frameworks */,
+				A2093B3D1947590800299096 /* CoreData.framework in Frameworks */,
+				A2093B3B1947590800299096 /* UIKit.framework in Frameworks */,
+				A2093B371947590800299096 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2093B501947590900299096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2093B581947590900299096 /* CoreData.framework in Frameworks */,
+				A2093B571947590900299096 /* UIKit.framework in Frameworks */,
+				A2093B561947590900299096 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2093B2A1947590800299096 = {
+			isa = PBXGroup;
+			children = (
+				A2093B3E1947590800299096 /* Habits */,
+				A2093B5B1947590900299096 /* HabitsTests */,
+				A2093B351947590800299096 /* Frameworks */,
+				A2093B341947590800299096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2093B341947590800299096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2093B331947590800299096 /* Habit.app */,
+				A2093B531947590900299096 /* HabitsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2093B351947590800299096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2FA3B241948F8B80069C080 /* MapKit.framework */,
+				A2F02AD81947AE8900498E3A /* CoreLocation.framework */,
+				A2093B361947590800299096 /* Foundation.framework */,
+				A2093B381947590800299096 /* CoreGraphics.framework */,
+				A2093B3A1947590800299096 /* UIKit.framework */,
+				A2093B3C1947590800299096 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2093B3E1947590800299096 /* Habits */ = {
+			isa = PBXGroup;
+			children = (
+				A2093B471947590800299096 /* HabitsAppDelegate.h */,
+				A2093B481947590800299096 /* HabitsAppDelegate.m */,
+				A2093B6B1947653800299096 /* Main.storyboard */,
+				A2FB8F2A194F8EBA002BA5CA /* HabitsMapViewController.h */,
+				A2FB8F2B194F8EBA002BA5CA /* HabitsMapViewController.m */,
+				A2093B701947698400299096 /* HabitsViewController.h */,
+				A2093B711947698400299096 /* HabitsViewController.m */,
+				A250698B1958B125006F0D1C /* HabitsInfoViewController.h */,
+				A250698C1958B125006F0D1C /* HabitsInfoViewController.m */,
+				A2093B6D1947694F00299096 /* HabitsTableViewController.h */,
+				A2093B6E1947694F00299096 /* HabitsTableViewController.m */,
+				A2093B4D1947590900299096 /* Images.xcassets */,
+				A2093B4A1947590900299096 /* Habits.xcdatamodeld */,
+				A2093B3F1947590800299096 /* Supporting Files */,
+			);
+			path = Habits;
+			sourceTree = "<group>";
+		};
+		A2093B3F1947590800299096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2093B401947590800299096 /* Habits-Info.plist */,
+				A2093B411947590800299096 /* InfoPlist.strings */,
+				A2093B441947590800299096 /* main.m */,
+				A2093B461947590800299096 /* Habits-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2093B5B1947590900299096 /* HabitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2093B611947590900299096 /* HabitsTests.m */,
+				A2093B5C1947590900299096 /* Supporting Files */,
+			);
+			path = HabitsTests;
+			sourceTree = "<group>";
+		};
+		A2093B5C1947590900299096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2093B5D1947590900299096 /* HabitsTests-Info.plist */,
+				A2093B5E1947590900299096 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2093B321947590800299096 /* Habits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2093B651947590900299096 /* Build configuration list for PBXNativeTarget "Habits" */;
+			buildPhases = (
+				A2093B2F1947590800299096 /* Sources */,
+				A2093B301947590800299096 /* Frameworks */,
+				A2093B311947590800299096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Habits;
+			productName = Habits;
+			productReference = A2093B331947590800299096 /* Habit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2093B521947590900299096 /* HabitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2093B681947590900299096 /* Build configuration list for PBXNativeTarget "HabitsTests" */;
+			buildPhases = (
+				A2093B4F1947590900299096 /* Sources */,
+				A2093B501947590900299096 /* Frameworks */,
+				A2093B511947590900299096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2093B5A1947590900299096 /* PBXTargetDependency */,
+			);
+			name = HabitsTests;
+			productName = HabitsTests;
+			productReference = A2093B531947590900299096 /* HabitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2093B2B1947590800299096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Habits;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Carter;
+				TargetAttributes = {
+					A2093B321947590800299096 = {
+						DevelopmentTeam = 4YHXMG76NM;
+					};
+					A2093B521947590900299096 = {
+						TestTargetID = A2093B321947590800299096;
+					};
+				};
+			};
+			buildConfigurationList = A2093B2E1947590800299096 /* Build configuration list for PBXProject "Habit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2093B2A1947590800299096;
+			productRefGroup = A2093B341947590800299096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2093B321947590800299096 /* Habits */,
+				A2093B521947590900299096 /* HabitsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2093B311947590800299096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2093B6C1947653800299096 /* Main.storyboard in Resources */,
+				A2093B431947590800299096 /* InfoPlist.strings in Resources */,
+				A2093B4E1947590900299096 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2093B511947590900299096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2093B601947590900299096 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2093B2F1947590800299096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FB8F2C194F8EBA002BA5CA /* HabitsMapViewController.m in Sources */,
+				A2093B6F1947694F00299096 /* HabitsTableViewController.m in Sources */,
+				A2093B451947590800299096 /* main.m in Sources */,
+				A2093B491947590800299096 /* HabitsAppDelegate.m in Sources */,
+				A250698D1958B125006F0D1C /* HabitsInfoViewController.m in Sources */,
+				A2093B721947698400299096 /* HabitsViewController.m in Sources */,
+				A2093B4C1947590900299096 /* Habits.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2093B4F1947590900299096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2093B621947590900299096 /* HabitsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2093B5A1947590900299096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2093B321947590800299096 /* Habits */;
+			targetProxy = A2093B591947590900299096 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2093B411947590800299096 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2093B421947590800299096 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2093B5E1947590900299096 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2093B5F1947590900299096 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2093B631947590900299096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2093B641947590900299096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2093B661947590900299096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Habits/Habits-Prefix.pch";
+				INFOPLIST_FILE = "Habits/Habits-Info.plist";
+				PRODUCT_NAME = Habit;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2093B671947590900299096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Habits/Habits-Prefix.pch";
+				INFOPLIST_FILE = "Habits/Habits-Info.plist";
+				PRODUCT_NAME = Habit;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A2093B691947590900299096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Habits.app/Habits";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Habits/Habits-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HabitsTests/HabitsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A2093B6A1947590900299096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Habits.app/Habits";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Habits/Habits-Prefix.pch";
+				INFOPLIST_FILE = "HabitsTests/HabitsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2093B2E1947590800299096 /* Build configuration list for PBXProject "Habit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2093B631947590900299096 /* Debug */,
+				A2093B641947590900299096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2093B651947590900299096 /* Build configuration list for PBXNativeTarget "Habits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2093B661947590900299096 /* Debug */,
+				A2093B671947590900299096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2093B681947590900299096 /* Build configuration list for PBXNativeTarget "HabitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2093B691947590900299096 /* Debug */,
+				A2093B6A1947590900299096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2093B4A1947590900299096 /* Habits.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2093B4B1947590900299096 /* Habits.xcdatamodel */,
+			);
+			currentVersion = A2093B4B1947590900299096 /* Habits.xcdatamodel */;
+			path = Habits.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2093B2B1947590800299096 /* Project object */;
+}
